@@ -1,0 +1,30 @@
+
+.title {
+  font-size: calc(var(--font-size) * 6);
+}
+
+.bg-red {
+  background: var(--red);
+}
+
+.cl-red {
+  color: var(--red);
+}
+
+.bg-white {
+  background: #fff;
+}
+
+.cl-white {
+  color:#fff;
+}
+
+.padding1x {
+  padding: var(--button-padding);
+}
+.text-shadow {
+  text-shadow: var(--text-shadow);
+}
+.text-center {
+  text-align: center;
+}
