@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <div class="fixed fitxy wrapper-xy-center" id="state">
+
+    </div>
+    <script>
+        var state = document.getElementById("state");
+        if (localStorage.getItem("win", true)) {
+            state.innerHTML = ` <h1>You Win</h1>
+        <p>Space Shooter V8 Coming soon...</p>
+        <button class="button" style="width: 150px" onclick="setEverything()">New Game</button>`;
+        } else {
+            state.innerHTML = `<h1>Play The Game</h1><button class="button" style="width: 150px" onclick='location.assign("./index.html")'>Play</button>`
+        }
+        function setEverything() {
+            localStorage.setItem("first_time", true);
+            localStorage.setItem("level", 1);
+            location.assign("./index.html");
+        }
+    </script>
+</body>
+
+</html>
